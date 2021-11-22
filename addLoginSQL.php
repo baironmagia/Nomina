@@ -22,7 +22,7 @@
     }
     else{
         validadDatos($username,$password,$email);
-
+        //valida la informacion
         // echo "$rol,$username,$password,$email";
         $sql = "INSERT INTO cuenta(idrol,usuario,clave,estado,email) VALUES ('$rol','$username','$password','1','$email')";
         $result = mysqli_query($bd,$sql);
